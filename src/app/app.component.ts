@@ -7,6 +7,13 @@ import { IceCream } from "./ice-cream";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
-  title = "ConsumEnumSelectors";
-  IceCream = IceCream;
+  title = "Consume EnumSelectors";
+  IceCreamType = IceCream;
+  IceCream: IceCream = IceCream.None;
+
+  onIceCream(someIcream) {
+    //debugger
+    this.IceCream = someIcream;
+    //alert("onIceCream");
+  }
 }
