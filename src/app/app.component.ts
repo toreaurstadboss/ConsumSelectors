@@ -12,8 +12,6 @@ export class AppComponent {
   IceCream: IceCream = IceCream.None;
 
   onIceCream(someIcream) {
-    //debugger
     this.IceCream = someIcream;
-    //alert("onIceCream");
   }
 }
